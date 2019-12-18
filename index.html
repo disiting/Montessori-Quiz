@@ -1,101 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Montessori Education Quiz">
     <title>Quiz App</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header>
-      <h1> <img src="images/school.png" class="banner-img">Montessori Education Quiz</h1>
-      <div class "progress-score">Question: 1/10 Score: 1/10</div>
+      <h1><img src="images/school.png" class="banner-img"> Montessori Education Quiz</h1>
+      <div class="progress-score"></div>
     </header>
 
-    <main>
+    <main role="main">
       <section class="start-quiz">
         <p>How much do you know about Montessori education?</p>
-        <input type="button" value="Start Quiz" class="button">
-      </section>
-
-      <div class="quiz-questions">
-          <form class="question-form">
-            <p>1. When was the Montessori schooling system invented?</p>
-            <label class="choice">
-              <input  id="choice-one" type="radio"">
-              <span>In 2000s</span>
-            </label>
-            <label class="choice">
-              <input id="choice-two" type="radio">
-              <span>In early 1900s</span>
-            </label>
-            <label class="choice">
-              <input id="choice-three" type="radio">
-              <span>In late 1900s</span>
-            </label>
-            <label class="choice">
-              <input id="choice-four" type="radio">
-              <span>It is still emerging</span>
-            </label>
-            <input type="button" value="Submit Answer" class="button">
-          </form>	
-      </div>
-
-      <div class="quiz-correct">
-          <form class="question-form">
-            <p>1. When was the Montessori schooling system invented?</p>
-            <label class="choice">
-              <input  id="choice-one" type="radio"">
-              <span>In 2000s</span>
-            </label>
-            <label class="choice">
-              <input id="choice-two" type="radio" checked>
-              <span>In early 1900s</span>
-              <span class="feedback correct">Yes! This is correct</span>
-            </label>
-            <label class="choice">
-              <input id="choice-three" type="radio">
-              <span>In late 1900s</span>
-            </label>
-            <label class="choice">
-              <input id="choice-four" type="radio">
-              <span>It is still emerging</span>
-            </label>
-            <input type="button" value="Next" class="button">
-          </form>	
-      </div>
-
-      <div class="quiz-wrong">
-          <form class="question-form">
-            <p>1. When was the Montessori schooling system invented?</p>
-            <label class="choice">
-              <input  id="choice-one" type="radio"">
-              <span>In 2000s</span>
-            </label>
-            <label class="choice">
-              <input id="choice-two" type="radio">
-              <span>In early 1900s</span>
-            </label>
-            <label class="choice">
-              <input id="choice-three" type="radio" checked>
-              <span>In late 1900s</span>
-              <span class="feedback wrong">No, the answer is, "In early 1900s"</span>
-            </label>
-            <label class="choice">
-              <input id="choice-four" type="radio">
-              <span>It is still emerging</span>
-            </label>
-            <input type="button" value="Next" class="button">
-          </form>	
-      </div>
-
-    
-      <section class="start-over">
-        <p>Your Score is 9/10</p>
-        <input type="button" value="Start Over" class="button">
+        <input type="button" value="Start Quiz" class="button js-start-button">
       </section>
     </main>
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
