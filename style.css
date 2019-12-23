@@ -61,6 +61,12 @@ header, .progress-score {
   padding: 10px 0;
 }
 
+.question-options label {
+  display: block;
+  margin-top: -20px;
+  margin-left: 25px;
+}
+
 .button {
   margin: 10px;
   border-radius: 3px;
@@ -74,4 +80,5 @@ header, .progress-score {
   border-radius: 5px;
   padding: 5px;
   font-weight: bold;
+  margin-top: 15px;
 }
